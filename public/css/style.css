@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#eef2f7;
+
+}
+
+.container{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* LEFT SIDE */
+
+.left-panel{
+
+    width:45%;
+
+    background:#0f4c81;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+.logo{
+
+    width:170px;
+
+    margin-bottom:25px;
+
+}
+
+.left-panel h1{
+
+    margin-bottom:15px;
+
+}
+
+.left-panel h3, h4, h6{
+
+    margin-bottom:20px;
+
+    font-weight:normal;
+
+}
+
+.left-panel p{
+
+    width:80%;
+
+    line-height:1.7;
+
+}
+
+/* RIGHT SIDE */
+
+.right-panel{
+
+    width:55%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+}
+
+.login-card{
+
+    width:400px;
+
+}
+
+.login-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    margin-bottom:30px;
+
+    color:#777;
+
+}
+
+.role-selector{
+
+    display:flex;
+
+    margin-bottom:20px;
+
+}
+
+.role-selector button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#ddd;
+
+}
+
+.role-selector button.active{
+
+    background:#0f4c81;
+
+    color:white;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:6px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border:none;
+
+    background:#0f4c81;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+}
+
+.login-btn:hover{
+
+    background:#08375d;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.container{
+
+flex-direction:column;
+
+}
+
+.left-panel{
+
+width:100%;
+
+padding:40px;
+
+}
+
+.right-panel{
+
+width:100%;
+
+padding:40px 20px;
+
+}
+
+.login-card{
+
+width:100%;
+
+max-width:400px;
+
+}
+
+}
+
+/* Footer */
+
+.login-footer{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #e5e7eb;
+
+    text-align:center;
+
+}
+
+.login-footer p{
+
+    margin:4px 0;
+
+    color:#777;
+
+    font-size:13px;
+
+}
+
+.login-footer p:first-child{
+
+    font-weight:600;
+
+    color:#0f4c81;
+
+}
