@@ -17,7 +17,8 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+//claude code added
+app.set("trust proxy", 1);
 
 //session config update as of aug 30, 2026
 app.use(
